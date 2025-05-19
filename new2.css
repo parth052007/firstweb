@@ -1,0 +1,74 @@
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa;
+  color: #004d40;
+  margin: 0;
+  padding: 2rem;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+.slide-in {
+  animation: slideIn 1.5s ease forwards;
+}
+
+/* Button Styling */
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* SVG Wave */
+.wave {
+  width: 100%;
+  height: 50px;
+  margin-top: 4rem;
+  display: block;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #004d40;
+  color: #a7ffeb;
+}
+
+body.dark-mode button {
+  background-color: #a7ffeb;
+  color: #004d40;
+}
+
+body.dark-mode button:hover {
+  background-color: #76ff03;
+}
